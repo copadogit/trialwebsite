@@ -1,113 +1,48 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<!DOCTYPE html>
 <html>
 <head>
-  <title>My first styled page</title>
-    <style type="text/css">
-    body {
-      padding-left: 11em;
-      color: #fffff;
-      font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
-      font-family: Georgia, "Times New Roman", Times, serif;
-      background-color: #9AD2D9 
-         }
-      .box {
-          background: #2db34a;
-          border-radius: 6px;
-          transition: background .2s linear, border-radius 1s ease-in 1s;
-          }
-      .box:hover {
-        color: #ff7b29;
-        border-radius: 50%;
-          }
-                        .card-container {
-                          cursor: pointer;
-                          height: 100%;
-                          perspective: 600;
-                          position: relative;
-                          width: 100%;
-                        }
-                        .card {
-                          height: 100%;
-                          position: absolute;
-                          transform-style: preserve-3d;
-                          transition: all 1s ease-in-out;
-                          width: 100%;
-                        }
-                        .card:hover {
-                          transform: rotateY(180deg);
-                        }
-                        .card .side {
-                          backface-visibility: hidden;
-                          border-radius: 6px;
-                          height: 100%;
-                          position: absolute;
-                          overflow: hidden;
-                          width: 100%;
-                        }
-                        .card .back {
-                          background: #eaeaed;
-                          color: #0087cc;
-                          line-height: 150px;
-                          text-align: center;
-                          transform: rotateY(180deg);
-                        }
-    ul.navbar {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-      position: absolute;
-      top: 2em;
-      left: 1em;
-      width: 9em }
-    h1 {
-      font-family: Helvetica, Geneva, Arial,
-            SunSans-Regular, sans-serif }
-    ul.navbar li {
-      background: white;
-      margin: 0.5em 0;
-      padding: 0.3em;
-      border-right: 1em solid black }
-    ul.navbar a {
-      text-decoration: none }
-    a:link {
-      color: blue }
-    a:visited {
-      color: purple }
-    </style>
+<style>
+         
+ .center {
+  text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  display: block;
+}
+  .column {
+    float: centre;
+    width: 30%;
+    padding: 20px;
+  }
+                              
+ .img-container {
+        text-align: center;
+      }
+
+/* Clearfix (clear floats) */
+.row::before {
+  content:"Happy Birthday";
+ background-color: #fefbd8
+  clear:both;
+  display:table;
+  width: 100%;
+  text-align:center;
+  font-family:"Comic Sans MS";
+  font-weight: bold;
+  font-size: 50px;
+ } 
+}
+
+</style>
 </head>
-
-<body>
-
-<!-- Site navigation menu -->
-  <div class="box">Box text</div>
-  <div class="card-container">
-  <div class="card">
-    <div class="side"><img src="https://i.imgur.com/LnG1VnB.jpg" alt="HAPPY BIRTHDAY SUCKER"></div>
-    <div class="side back">Happy Birthday Bitch</div>
+<body style="background-image:url('https://i.imgur.com/zhv508Z.jpg');>
+<h1 class="blah">     </h1>
+                
+<div class="row" >
+  <div class="img-container">
+    <img src="https://i.imgur.com/A9FMhG1.jpg" alt="Forest" style="width:60%" >
   </div>
 </div>
-<ul class="navbar">
-  <li><a href="index.html">Home page</a>
-  <li><a href="musings.html">Musings</a>
-  <li><a href="town.html">My town</a>
-  <li><a href="links.html">Links</a>
-</ul>
-
-<!-- Main content -->
-<h1>My first styled page1234</h1>
-<div class="box">Box</div>
-<p>Welcome to my styled page!
-
-<p>It lacks images, but at least it has style.
-And it has links, even if they don't go
-anywhere&hellip;
-
-<p>There should be more here, but I don't know
-what yet.
-
-<!-- Sign and date the page, it's only polite! -->
-<address>Made 5 April 2004<br>
-  by myself.</address>
 
 </body>
 </html>
